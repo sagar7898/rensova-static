@@ -3,23 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="We build scalable .NET web applications, APIs and automation systems for startups and SMEs." />
 
+    <!-- Primary SEO -->
     <title>Rensova - .NET & Automation Experts</title>
+    <meta name="description" content="Rensova builds scalable .NET web applications, APIs, automation systems and business solutions for startups and SMEs." />
+    <meta name="keywords" content=".NET Development, ASP.NET Core, API Development, Automation Systems, Software Development Company India" />
+    <meta name="author" content="Rensova" />
+    <meta name="robots" content="index, follow" />
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.rensova.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Rensova - .NET & Automation Experts" />
+    <meta property="og:description" content="We build scalable .NET web applications, APIs and automation systems for startups and SMEs." />
+    <meta property="og:image" content="https://www.rensova.com/images/logo.png" />
+    <meta property="og:url" content="https://www.rensova.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rensova" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rensova - .NET & Automation Experts" />
+    <meta name="twitter:description" content="Scalable .NET web applications, APIs and automation systems." />
+    <meta name="twitter:image" content="https://www.rensova.com/images/logo.png" />
+
+    <!-- Organization Structured Data (VERY IMPORTANT for logo in Google) -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Rensova",
+          "url": "https://www.rensova.com",
+          "logo": "https://www.rensova.com/images/logo.png",
+          "sameAs": [
+            "https://www.linkedin.com/",
+            "https://www.instagram.com/"
+          ]
+        }
+    </script>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
 </head>
 <body>
+
+    <!--<div id="navbar"></div>-->
 
     <header>
         <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/rensova-logo.png" alt="Rensova Logo" class="brand-logo" />
+                    <img src="images/brandLogoName.svg" alt="Rensova Logo" class="brand-logo" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -44,8 +87,8 @@
                             <a class="nav-link active" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-gradient" href="contact.html">
-                                Get Quote
+                            <a class="btn btn-gradient" href="/contact.html#contact-form-section">
+                                Get a Quote
                             </a>
                         </li>
                     </ul>
@@ -61,26 +104,23 @@
                 <div class="row align-items-center">
 
                     <div class="col-lg-6">
-                        <h1 class="contact-title">
-                            Get in Touch with Rensova
+                        <h1 class="hero-title mb-4">
+                            Get in Touch with <span class="highlight-text">Rensova</span> <br>
+                            Turn Your Ideas into Powerful Software
                         </h1>
-
-                        <h3 class="contact-subtitle">
-                            We'd love to hear from you!
-                        </h3>
 
                         <p class="contact-desc">
                             Whether you have a question, need a consultation,
                             or want to discuss a project, our team is here to help.
                         </p>
 
-                        <div class="mt-4">
-                            <a class="btn btn-gradient me-3">Contact Us</a>
-                            <a class="btn btn-light-outline">Call Us</a>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#contact-form-section" class="btn btn-gradient me-3">Send a Message</a>
+                            <a href="tel:+919623302014" class="btn btn-outline-light">Schedule a Call</a>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 text-end">
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
                         <img src="images/contact-hero.png"
                              class="img-fluid contact-hero-img"
                              alt="Contact" />
@@ -92,7 +132,7 @@
 
 
         <!-- ================= CONTACT INFO ================= -->
-        <section class="contact-info-section text-center">
+        <section class="contact-info-section text-center" >
             <div class="container">
 
                 <h2 class="section-heading">Contact Information</h2>
@@ -112,7 +152,7 @@
                         <div class="contact-card">
                             <i class="bi bi-telephone contact-icon"></i>
                             <h5>Phone</h5>
-                            <p>+1 (123) 555-7890</p>
+                            <p>+91 96233 02014</p>
                             <small>Available Monday to Friday</small>
                         </div>
                     </div>
@@ -121,8 +161,7 @@
                         <div class="contact-card">
                             <i class="bi bi-geo-alt contact-icon"></i>
                             <h5>Visit Us</h5>
-                            <p>1234 Tech Park,<br />San Francisco CA</p>
-                            <small>Come by our office and say hello!</small>
+                            <p>E.C.P. Vastu,<br />Hadapsar, Pune 411028</p>
                         </div>
                     </div>
 
@@ -132,7 +171,7 @@
 
 
         <!-- ================= CONTACT FORM ================= -->
-        <section class="contact-form-section text-center">
+        <section class="contact-form-section text-center" id="contact-form-section">
             <div class="container">
 
                 <h2 class="section-heading">Contact Us</h2>
@@ -141,19 +180,25 @@
                 </p>
 
                 <div class="contact-form-card mt-5">
-                    <form>
+                    <form id="contactForm">
                         <div class="row g-4">
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control custom-input" placeholder="Your Name" />
+                                <input id="name" type="text" class="form-control custom-input" placeholder="Your Name" required />
                             </div>
 
                             <div class="col-md-6">
-                                <input type="email" class="form-control custom-input" placeholder="Your Email" />
+                                <input type="email" id="email" class="form-control custom-input" placeholder="Your Email" required />
                             </div>
-
-                            <div class="col-12">
-                                <select class="form-control custom-input">
+                            <div class="col-md-6">
+                                <input type="tel"
+                                       id="phone"
+                                       class="form-control custom-input"
+                                       placeholder="+91 Your Phone Number"
+                                       required>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-control custom-input" id="topic" >
                                     <option>Select a topic...</option>
                                     <option>Backend Development</option>
                                     <option>Cloud & DevOps</option>
@@ -162,43 +207,71 @@
                             </div>
 
                             <div class="col-12">
-                                <textarea class="form-control custom-input"
+                                <textarea id="message" class="form-control custom-input"
                                           rows="5"
-                                          placeholder="Your Message"></textarea>
+                                          placeholder="Your Message" required></textarea>
                             </div>
 
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-gradient px-5 mt-3">
-                                    Send Message
+
+                                <button type="submit"
+                                        id="submitBtn"
+                                        class="btn btn-gradient px-5 mt-3">
+
+                                    <span id="btnText">Send Message</span>
+
+                                    <span id="btnLoader" class="spinner-border spinner-border-sm d-none"></span>
+
                                 </button>
+
                             </div>
 
                         </div>
                     </form>
+
+                    <div id="successMessage" class="success-message">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Thank you! Your message has been sent successfully.
+                    </div>
+
+                    <div id="errorMessage" class="error-message">
+                        ❌ Something went wrong. Please try again.
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <!-- ================= MAP ================= -->
-        <section class="map-section">
+        <section class="map-section text-center">
             <div class="container">
+                <h2 class="section-heading">Where We Are Located</h2>
+                <p class="section-subheading">
+                    Find us at the location below or reach out online.
+                    We always ready to discuss your ideas and help turn
+                    them into powerful software solutions.
+                </p>
                 <div class="map-card">
-                    <iframe src="https://maps.google.com/maps?q=San%20Francisco&t=&z=12&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0"
-                            allowfullscreen>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.678380325688!2d73.92605491552511!3d18.47609558161766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea1c88bf29ff%3A0x2a996fcabaf1f7e1!2sECP%20Vastu%2C%20Handewadi%20Rd%2C%20Satav%20Nagar%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra%20411028!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
                     </iframe>
                 </div>
             </div>
         </section>
     </main>
 
+    <!--<div id="footer"></div>-->
+
     <footer class="footer-section">
         <div class="container">
             <div class="row gy-4">
 
                 <div class="col-lg-4 col-md-6">
-                    <img src="images/rensova-logo.png" alt="Rensova Logo" class="footer-logo mb-3" />
+                    <img src="images/brandLogoName.svg" alt="Rensova Logo" class="footer-logo mb-3" />
                     <p class="footer-text">
                         We build scalable .NET applications, APIs and automation systems
                         for startups and growing businesses.
@@ -218,18 +291,22 @@
                 <div class="col-lg-3 col-md-6">
                     <h6 class="footer-heading">Services</h6>
                     <ul class="footer-links">
-                        <li>Web App Development</li>
-                        <li>API & Backend Systems</li>
-                        <li>Cloud Deployment</li>
-                        <li>Automation Solutions</li>
+                        <li><a>Web App Development</a></li>
+                        <li><a>API & Backend Systems</a></li>
+                        <li><a>Cloud Deployment</a></li>
+                        <li><a>Automation Solutions</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <h6 class="footer-heading">Contact</h6>
-                    <p class="mb-2">hello@rensova.com</p>
-                    <a href="contact.html" class="btn btn-gradient btn-sm mt-2 w-100">
-                        Get Free Consultation
+                    <p class="mb-2">
+                        <a href="mailto:hello@rensova.com?subject=Free Consultation Inquiry" class="footer-email">
+                            hello@rensova.com
+                        </a>
+                    </p>
+                    <a href="/contact.html#contact-form-section" class="btn btn-gradient btn-sm mt-2 w-100">
+                        Contact Us
                     </a>
                 </div>
 
@@ -249,10 +326,82 @@
         </div>
     </footer>
 
+
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", async function (e) {
+
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const topic = document.getElementById("topic").value;
+            const message = document.getElementById("message").value;
+
+            const btnText = document.getElementById("btnText");
+            const loader = document.getElementById("btnLoader");
+
+            btnText.innerText = "Sending...";
+            loader.classList.remove("d-none");
+
+            try {
+
+                const res = await fetch("https://rensova-enquiry-api-g2f7f4bccpa9a4h8.centralindia-01.azurewebsites.net/api/SendEnquiry", {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        phone: phone,
+                        message: message
+                    })
+
+                });
+
+                if (res.ok) {
+
+                    const successBox = document.getElementById("successMessage");
+
+                    successBox.classList.add("show");
+
+                   
+
+                    setTimeout(() => {
+                        successBox.classList.remove("show");
+                    }, 5000);
+
+                    form.reset();
+
+                } else {
+
+                    document.getElementById("formError").classList.remove("d-none");
+
+                }
+
+            } catch (err) {
+
+                document.getElementById("formError").classList.remove("d-none");
+
+            }
+
+            btnText.innerText = "Send Message";
+            loader.classList.add("d-none");
+
+        });
+
+    </script>
 </body>
 </html>
